@@ -270,11 +270,11 @@ grandparent.addEventListener("click",()=> {
     console.log("Grandparent Event inside capturing");
 },true)
 parent.addEventListener("click",()=> {
-    spans[2].textContent = "Parent"
+    spans[1].textContent = "Parent"
     console.log("parent Event inside capturing");
 },true)
 child.addEventListener("click",()=> {
-    spans[1].textContent = "Child"
+    spans[2].textContent = "Child"
     console.log("Child Event inside capturing");
 },true)
 
