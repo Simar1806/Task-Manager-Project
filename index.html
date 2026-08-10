@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+    <nav>
+        <div class="text-content">
+            <h2>TASK MANAGER</h2>
+            <p>Manage your daily tasks</p>
+        </div>
+        <button id="dark-mode">Dark🌛</button>
+    </nav>
+    <section class="form">
+        <form>
+            <input type="text" class="title" placeholder="Enter Task">
+
+            <div class="category">
+                <label for="Category">Choose a Category:</label>
+                <select id="Category" name="Category">
+                <option value="Development">Development</option>
+                <option value="College">College</option>
+                <option value="Personal">Personal</option>
+                <option value="Work">Work</option>
+                <option value="Other">Other</option>
+                </select>
+            </div>
+            <button>+ Add Task</button>
+        </form>
+    </section>
+    <section class="status">
+        <div class="total">
+            <h3>TOTAL</h3>
+            <p id="total"></p>
+        </div>
+        <div class="pending">
+            <h3>PENDING</h3>
+            <p id="pending"> </p>
+        </div>
+        <div class="completed">
+            <h3>COMPLETED</h3>
+            <p id="completed"></p>
+        </div>
+    </section>
+
+    <div class="legend">
+        <button id="clear-all" onclick="clearTasks()">Clear All</button>
+    </div>
+    <div class="tasks">
+</div>
+<section id="rendering">
+    <h1>HOW THE BROWSER RENDERS THIS PAGE </h1>
+<div class="visualization">
+<div id="one">
+    <h1>HTML</h1>
+    <i class="ri-arrow-down-line"></i>
+</div>
+<div id="two">
+        <h1>CSS</h1>
+    <i class="ri-arrow-down-line"></i>
+</div>
+<div id="three">
+        <h1>PARSING</h1>
+    <i class="ri-arrow-down-line"></i>
+</div>
+<div id="four">
+        <h1>PARSING</h1>
+    <i class="ri-arrow-down-line"></i>
+</div>
+<div id="five">
+        <h1>TOKENIZATION</h1>
+    <i class="ri-arrow-down-line"></i>
+</div>
+<div id="six">
+        <h1>TOKENIZATION</h1>
+    <i class="ri-arrow-down-line"></i>
+</div>
+<div id="seven">
+        <h1>DOM TREE</h1>
+    <i class="ri-arrow-right-down-line"></i>
+</div>
+<div id="eight">
+        <h1>CSSOM TREE</h1>
+    <i class="ri-arrow-left-down-line"></i>
+</div>
+<div id="nine">
+        <h1>RENDER TREE</h1>
+    <i class="ri-arrow-down-line"></i>
+</div>
+    </div>
+
+</section>
+
+<section class="propagation">
+    <h2>EVENT PROPAGATION</h2>
+    <div class="grandparent">
+        Grandparent
+        <div class="parent">
+            Parent
+            <button class="child"> Child</button>
+        </div>
+    </div>
+</section>
+
+<section class="results">
+    <div class="capturing">
+        <h3>Capturing</h3>
+        <span class="first"></span>
+        <span class="second"></span>
+        <span class="third"></span>
+    </div>
+    <div class="bubbling">
+        <h3>Bubbling</h3>
+        <span class="firstB"></span>
+        <span class="secondB"></span>
+        <span class="thirdB"></span>
+    </div>
+</section>
+
+    <script src="script.js"></script>
+</body>
+</html>
