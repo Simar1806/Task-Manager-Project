@@ -69,17 +69,17 @@ else{
 }
 
 
-    let input = document.querySelector("input")
 
-    console.log(input.value)
-    console.log(input.getAttribute("value"))
-
-    // input.value gives me the current value entered by user in input 
-    //  input.getAttribute("value") gives me the value of attribute written already in html both are not even closely related 
 
 
 form.addEventListener("submit", (event) => {
+        let input = document.querySelector("input")
 
+    console.log(` input.value => ${input.value}`)
+    console.log(`Get attribute value => ${input.getAttribute("value")}`)
+
+    // input.value gives me the current value entered by user in input 
+    //  input.getAttribute("value") gives me the value of attribute written already in html both are not even closely related 
     event.preventDefault();
 
     if(input.value.trim() === "") return;
