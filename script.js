@@ -70,8 +70,6 @@ else{
 
 
 
-
-
 form.addEventListener("submit", (event) => {
         let input = document.querySelector("input")
 
@@ -214,6 +212,9 @@ function renderTasks(){
         <button class="complete-btn">Done</button>
         <button class="delete-btn">Delete</button>
     </div>`
+    if (elem.taskStatus === "Completed") {
+            taskCard.classList.add("done")
+        }
 
     let h3 = taskCard.querySelector(".task-h3")
     let c = taskCard.querySelector(".task-category")
